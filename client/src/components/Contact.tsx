@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MessageCircle, Instagram, Mail, ArrowRight } from "lucide-react";
+import { MessageCircle, Instagram, Mail, ArrowRight, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Contact() {
@@ -24,7 +24,7 @@ export default function Contact() {
 
             <div className="space-y-6">
               <a 
-                href="https://wa.me/5562999999999" 
+                href="https://wa.me/5562982091479" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-6 border border-border bg-card hover:border-primary transition-all group"
@@ -40,7 +40,7 @@ export default function Contact() {
               </a>
 
               <a 
-                href="https://instagram.com/daniel.toledo" 
+                href="https://www.instagram.com/danieltoledomtor" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-6 border border-border bg-card hover:border-primary transition-all group"
@@ -55,15 +55,35 @@ export default function Contact() {
                 <ArrowRight className="ml-auto w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
               </a>
 
-              <div className="flex items-center gap-4 p-6 border border-border bg-card">
-                <div className="bg-secondary p-3 rounded-none">
+<a 
+                href="mailto:danieltoledopersonal@gmail.com"
+                className="flex items-center gap-4 p-6 border border-border bg-card hover:border-primary transition-all group"
+              >
+                <div className="bg-secondary p-3 rounded-none group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                   <Mail className="w-6 h-6" />
                 </div>
                 <div>
                   <h3 className="font-bold uppercase text-lg">Email</h3>
-                  <p className="text-muted-foreground text-sm">daniel.toledo@email.com</p>
+                  <p className="text-muted-foreground text-sm">danieltoledopersonal@gmail.com</p>
                 </div>
-              </div>
+                <ArrowRight className="ml-auto w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              </a>
+
+              <a 
+                href="https://www.youtube.com/@DanielToledoPersonal" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 p-6 border border-border bg-card hover:border-primary transition-all group"
+              >
+                <div className="bg-primary/10 p-3 rounded-none group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                  <Youtube className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="font-bold uppercase text-lg">YouTube</h3>
+                  <p className="text-muted-foreground text-sm">Conteúdo exclusivo em vídeo</p>
+                </div>
+                <ArrowRight className="ml-auto w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              </a>
             </div>
           </motion.div>
 

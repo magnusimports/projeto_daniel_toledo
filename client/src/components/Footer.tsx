@@ -1,4 +1,4 @@
-import { Dumbbell, Instagram } from "lucide-react";
+import { Instagram, Youtube, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -15,12 +15,26 @@ export default function Footer() {
 
           <div className="flex gap-4">
             <a 
-              href="https://instagram.com" 
+              href="https://www.instagram.com/danieltoledomtor" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Instagram className="w-5 h-5" />
+            </a>
+            <a 
+              href="https://www.youtube.com/@DanielToledoPersonal" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Youtube className="w-5 h-5" />
+            </a>
+            <a 
+              href="mailto:danieltoledopersonal@gmail.com" 
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Mail className="w-5 h-5" />
             </a>
           </div>
         </div>
