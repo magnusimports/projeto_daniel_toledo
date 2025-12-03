@@ -44,10 +44,7 @@ export default function Navbar() {
       <div className="container flex items-center justify-between">
         <Link href="/">
           <a className="flex items-center gap-2 group">
-            <Dumbbell className="w-8 h-8 text-primary transition-transform group-hover:rotate-12" />
-            <span className="font-display font-bold text-2xl tracking-tighter">
-              DANIEL<span className="text-primary">TOLEDO</span>
-            </span>
+            <img src="/images/logo.png" alt="Daniel Toledo Logo" className="h-12 w-auto object-contain transition-transform group-hover:scale-105" />
           </a>
         </Link>
 

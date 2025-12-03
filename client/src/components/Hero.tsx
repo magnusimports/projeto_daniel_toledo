@@ -15,8 +15,8 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10" />
         <img
           src="/images/hero-bg.jpg"
-          alt="Daniel Toledo Training"
-          className="w-full h-full object-cover object-center"
+          alt="Background Gym"
+          className="w-full h-full object-cover object-center opacity-50"
         />
       </div>
 

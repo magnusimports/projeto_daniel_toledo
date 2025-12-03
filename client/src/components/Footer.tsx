@@ -6,10 +6,7 @@ export default function Footer() {
       <div className="container">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex items-center gap-2">
-            <Dumbbell className="w-6 h-6 text-primary" />
-            <span className="font-display font-bold text-xl tracking-tighter">
-              DANIEL<span className="text-primary">TOLEDO</span>
-            </span>
+            <img src="/images/logo.png" alt="Daniel Toledo Logo" className="h-10 w-auto object-contain" />
           </div>
 
           <p className="text-muted-foreground text-sm text-center md:text-left">

@@ -25,7 +25,7 @@ export default function About() {
           >
             <div className="relative z-10 border-2 border-primary p-2">
               <img
-                src="/images/daniel-profile.jpeg"
+                src="/images/daniel-arms-crossed.jpg"
                 alt="Daniel Toledo"
                 className="w-full grayscale hover:grayscale-0 transition-all duration-500"
               />

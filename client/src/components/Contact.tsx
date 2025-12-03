@@ -75,7 +75,7 @@ export default function Contact() {
           >
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent z-0" />
             <img 
-              src="/images/daniel-hero.jpeg" 
+              src="/images/daniel-shout.jpg" 
               alt="Daniel Toledo Training" 
               className="w-full h-[600px] object-cover grayscale contrast-125 relative z-10 border-2 border-border"
             />
