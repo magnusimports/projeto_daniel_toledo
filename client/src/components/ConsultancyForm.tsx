@@ -19,7 +19,8 @@ import { Loader2, Send } from "lucide-react";
 
 const formSchema = z.object({
   name: z.string().min(2, "Nome é obrigatório"),
-  age: z.string().min(1, "Idade é obrigatória"),
+  email: z.string().email("Email inválido"),
+  birthDate: z.string().min(1, "Data de nascimento é obrigatória"),
   height: z.string().min(1, "Altura é obrigatória"),
   weight: z.string().min(1, "Peso é obrigatório"),
   profession: z.string().min(2, "Profissão é obrigatória"),
@@ -77,7 +78,8 @@ export default function ConsultancyForm({ onSuccess }: { onSuccess?: () => void 
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
-      age: "",
+      email: "",
+      birthDate: "",
       height: "",
       weight: "",
       profession: "",
@@ -95,7 +97,8 @@ export default function ConsultancyForm({ onSuccess }: { onSuccess?: () => void 
 
     const message = `*NOVA CONSULTORIA ONLINE - ANAMNESE*%0A%0A` +
       `*Nome:* ${values.name}%0A` +
-      `*Idade:* ${values.age} anos%0A` +
+      `*Email:* ${values.email}%0A` +
+      `*Data de Nascimento:* ${values.birthDate}%0A` +
       `*Altura:* ${values.height}m%0A` +
       `*Peso:* ${values.weight}kg%0A` +
       `*Profissão:* ${values.profession}%0A%0A` +
@@ -134,12 +137,25 @@ export default function ConsultancyForm({ onSuccess }: { onSuccess?: () => void 
           />
           <FormField
             control={form.control}
-            name="age"
+            name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Idade *</FormLabel>
+                <FormLabel>Email *</FormLabel>
                 <FormControl>
-                  <Input type="number" placeholder="Ex: 30" {...field} />
+                  <Input type="email" placeholder="seu@email.com" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="birthDate"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Data de Nascimento *</FormLabel>
+                <FormControl>
+                  <Input type="date" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
