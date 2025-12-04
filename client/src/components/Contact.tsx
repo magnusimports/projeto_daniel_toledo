@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MessageCircle, Instagram, Mail, ArrowRight, Youtube } from "lucide-react";
+import { MessageCircle, Instagram, Mail, ArrowRight, Youtube, ClipboardList } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Contact() {
@@ -23,6 +23,25 @@ export default function Contact() {
             </p>
 
             <div className="space-y-6">
+              <a 
+                href="https://forms.gle/WnQUZyHmzsnRitvs6" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 p-6 border border-primary bg-primary/5 hover:bg-primary/10 transition-all group relative overflow-hidden"
+              >
+                <div className="absolute top-0 right-0 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 uppercase tracking-wider">
+                  Primeiro Passo
+                </div>
+                <div className="bg-primary p-3 rounded-none text-primary-foreground">
+                  <ClipboardList className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="font-bold uppercase text-lg">Avaliação Física</h3>
+                  <p className="text-muted-foreground text-sm">Preencha o formulário inicial</p>
+                </div>
+                <ArrowRight className="ml-auto w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" />
+              </a>
+
               <a 
                 href="https://wa.me/5562982091479" 
                 target="_blank" 
