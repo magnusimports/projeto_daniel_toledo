@@ -42,10 +42,8 @@ export default function Navbar() {
       )}
     >
       <div className="container flex items-center justify-between">
-        <Link href="/">
-          <a className="flex items-center gap-2 group">
-            <img src="/images/logo.png" alt="Daniel Toledo Logo" className="h-12 w-auto object-contain transition-transform group-hover:scale-105" />
-          </a>
+        <Link href="/" className="flex items-center gap-2 group">
+          <img src="/images/logo.png" alt="Daniel Toledo Logo" className="h-12 w-auto object-contain transition-transform group-hover:scale-105" />
         </Link>
 
         {/* Desktop Menu */}
